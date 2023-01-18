@@ -4,7 +4,7 @@
   "description": "Proyecto UpTask con Node y MVC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/JuliusMatadamas/UpTask/issues"
   },
-  "homepage": "https://github.com/JuliusMatadamas/UpTask#readme"
+  "homepage": "https://github.com/JuliusMatadamas/UpTask#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
