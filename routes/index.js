@@ -1,15 +1,9 @@
 const express = require('express');
 const {request, response} = require("express");
 const router = express.Router();
+const tasksController = require('../controllers/tasksController');
 
 module.exports = () => {
-    router.get('/', (request, response) => {
-        response.send('Hola mundo');
-    });
-
-    router.get('/nosotros', (request, response) => {
-        response.send('Mostrar nosotros');
-    });
-
+    router.get('/', tasksController.tasksIndex);
     return router;
 }
